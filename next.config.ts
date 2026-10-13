@@ -5,11 +5,12 @@ const nextConfig: NextConfig = {
   experimental: {
     agentFeedback: true,
   },
+  output: 'standalone',
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {
     rules: {
-      "*.css": {
+      "*.css": {  
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
       },
